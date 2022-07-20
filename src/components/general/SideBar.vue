@@ -41,8 +41,11 @@
     </div>
 
     <div @click="drawerClick" class="side-bar__minimize">
-      <span class="icon-minimize-menu" :class="miniState && 'is-mini'"></span>
-      <div class="side-bar__minimize--text" v-if="!miniState">Minimize menu</div>
+      <span v-if="miniState" class="icon-menu-toggle" />
+      <span v-else class="icon-minimize-menu" :class="miniState && 'is-mini'" />
+      <div class="side-bar__minimize--text" v-if="!miniState">
+        Minimize menu
+      </div>
     </div>
   </q-drawer>
 </template>

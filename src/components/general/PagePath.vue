@@ -8,12 +8,13 @@
       :to="path"
       v-if="name"
       class="page-path__route page-path__item"
-      >{{ name }}</router-link
     >
+      {{ name }}
+    </router-link>
 
-    <div v-if="query" class="page-path__query page-path__item row items-center">
+    <div class="page-path__query page-path__item row items-center">
       <span class="icon-arrow-right"></span>
-      <div>{{ query }}</div>
+      <div>Jennifer Crowford</div>
     </div>
   </div>
 </template>

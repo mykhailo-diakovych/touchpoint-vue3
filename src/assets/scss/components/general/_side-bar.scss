@@ -90,7 +90,6 @@
         font-size: .75rem;
         line-height: 1;
         color: $white;
-        margin-bottom: 2px;
       }
     }
   }
@@ -103,6 +102,7 @@
     margin: 0 .5rem 1rem;
     padding: .5rem .7rem;
     transition: all .5s;
+    height: 2rem;
 
     &:hover {
       span:before,
@@ -111,9 +111,19 @@
       }
     }
 
+    .icon-menu-toggle::before {
+      font-size: .8rem;
+    }
+
     span {
+      flex-shrink: 0;
       font-size: 1rem;
       transition: all .5s;
+
+      &::before,
+      &::after {
+        font-size: 1rem;
+      }
     }
 
     div {
