@@ -1,0 +1,21 @@
+.nav-tabs {
+  .q-tab {
+    &__content {
+      padding-bottom: .75rem;
+    }
+
+    &__label {
+      font-size: .87rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      color: $page-path-text;
+      transition: all .5s;
+    }
+
+    &--active {
+      .q-tab__label {
+        color: $contact-text;
+      }
+    }
+  }
+}

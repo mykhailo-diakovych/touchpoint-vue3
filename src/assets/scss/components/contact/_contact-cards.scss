@@ -1,0 +1,52 @@
+.contact-cards {
+  &__header {
+    width: 100%;
+    height: fit-content;
+
+    h3 {
+      color: $contact-text;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      letter-spacing: -0.3px;
+    }
+
+    span {
+      position: relative;
+      top: 2px;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      letter-spacing: -0.1px;
+      color: $nav-title-color;
+    }
+  }
+
+  .q-item {
+    min-height: auto;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    .q-focus-helper {
+      height: 0 !important;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      .q-focus-helper {
+        display: block;
+        background: transparent !important;
+
+        &::before,
+        &::after {
+          background: transparent;
+        }
+      }
+    }
+
+    &__section {
+      padding-right: 0;
+    }
+  }
+}

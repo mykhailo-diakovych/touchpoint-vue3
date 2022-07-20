@@ -1,0 +1,164 @@
+.side-bar {
+  background-image: url('@/assets/img/components/side-bar/bg.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__logo {
+    cursor: pointer;
+    padding: 0 1.2rem;
+    transition: all .5s;
+
+    span {
+      font-size: 1.125rem;
+      margin-right: 0.375rem;
+    }
+  }
+
+  .nav {
+    &__item {
+      margin: 0 .5rem 2px;
+      padding: .5rem .7rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      border-radius: .5rem;
+      transition: all .5s;
+
+      &:hover {
+        cursor: pointer;
+        background: #000;
+
+        .nav {
+          &__icon:before,
+          &__title {
+            color: #fff;
+          }
+        }
+      }
+
+      &.active {
+        background-color: $nav-item-bg;
+
+        .nav {
+          &__icon:before,
+          &__title {
+            color: #fff;
+          }
+        }
+      }
+
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__icon {
+      font-size: 1.1rem;
+      transition: all .5s;
+    }
+
+    &__title {
+      font-size: .875rem;
+      line-height: 1.25rem;
+      color: $nav-title-color;
+      font-weight: 600;
+      transition: all .5s;
+    }
+
+    &__notifications {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: .875rem;
+      background-color: $notifications-bg;
+      border-radius: .75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+
+      span {
+        font-weight: 600;
+        font-size: .75rem;
+        line-height: 1;
+        color: $white;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &__minimize {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 .5rem 1rem;
+    padding: .5rem .7rem;
+    transition: all .5s;
+
+    &:hover {
+      span:before,
+      div {
+        color: #fff;
+      }
+    }
+
+    span {
+      font-size: 1rem;
+      transition: all .5s;
+    }
+
+    div {
+      font-size: .875rem;
+      line-height: 1.25rem;
+      color: $nav-title-color;
+      font-weight: 600;
+      transition: all .5s;
+    }
+  }
+
+  &.open {
+    .side-bar__logo {
+      padding: 0 1.5rem;
+    }
+
+    .nav {
+      &__item {
+        padding: .5rem .9rem;
+        border-radius: .25rem;
+      }
+
+      &__icon {
+        margin-right: 1.125rem;
+      }
+
+      &__notifications {
+        position: static;
+      }
+    }
+
+    .side-bar {
+      &__minimize {
+        padding: .5rem .9rem;
+
+        &--text {
+          white-space: nowrap;
+        }
+        span {
+          margin-right: 1.125rem;
+        }
+      }
+    }
+  }
+}
+.q-drawer {
+  transition: all .5s;
+}

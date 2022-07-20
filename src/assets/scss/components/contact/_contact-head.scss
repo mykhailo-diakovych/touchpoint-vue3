@@ -1,0 +1,33 @@
+.contact-head {
+  border-radius: .5rem;
+  background-image: url('@/assets/img/components/page-wrapper-head/bg.png');
+  background-size: cover;
+  background-position: bottom left;
+  padding: 2rem 2rem 0;
+
+  .contact {
+    margin-bottom: 2rem;
+
+    &__data {
+      margin-left: 1rem;
+      color: $contact-text;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-bottom: .25rem;
+    }
+
+    p {
+      font-size: .87rem;
+      line-height: 1.25rem;
+
+      span {
+        font-size: .4rem;
+      }
+    }
+  }
+}

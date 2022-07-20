@@ -1,0 +1,32 @@
+.contact-create-new-card {
+  &__content {
+    flex: 1 1 auto;
+
+    .nav-tabs {
+      width: fit-content;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: .875rem .875rem 9px 1rem;
+    border-radius: .25rem;
+    border: 1px solid $note-border;
+    background-color: $note-bg;
+
+    textarea {
+      width: 100%;
+      background-color: transparent;
+      resize: none;
+      height: 25px;
+      font-size: .875rem;
+      line-height: 1.25rem;
+
+      &::placeholder {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        color: $nav-title-color;
+      }
+    }
+  }
+}

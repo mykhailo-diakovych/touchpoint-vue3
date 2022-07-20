@@ -1,0 +1,33 @@
+.action-button {
+  background-color: $white;
+  border-radius: .25rem;
+  padding: .31rem .75rem;
+  cursor: pointer;
+  transition: all .5s;
+
+  span {
+    font-size: .7rem;
+    line-height: 1;
+    margin-right: .5rem;
+    //padding-top: 5px;
+
+    &:before {
+      color: $page-path-text;
+    }
+  }
+
+  p {
+    font-size: .87rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: $page-path-text;
+  }
+
+  &:hover {
+    background-color: $page-path-text;
+    span:before,
+    p {
+      color: #fff;
+    }
+  }
+}

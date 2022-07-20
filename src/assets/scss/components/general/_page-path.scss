@@ -1,0 +1,36 @@
+.page-path {
+  padding: .55rem 0;
+
+  &__back {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: $page-path-back;
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .75rem;
+    cursor: pointer;
+
+    span {
+      font-size: .6rem;
+    }
+  }
+
+  &__item {
+    color: $page-path-text;
+    font-weight: 600;
+    font-size: 0.87rem;
+    margin-right: .75rem;
+    cursor: pointer;
+
+    span {
+      margin-right: .75rem;
+      font-size: .5rem;
+    }
+  }
+
+  &__query {
+    cursor: default;
+  }
+}

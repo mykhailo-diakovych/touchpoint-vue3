@@ -1,0 +1,66 @@
+.contact-card {
+  overflow: hidden;
+
+  &__icon {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 1px;
+      height: 300px;
+      background-color: $contact-card-line;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 0.5rem);
+    }
+  }
+
+  &__card {
+    flex: 1 1 auto;
+    background-color: $white;
+    border-radius: .25rem;
+    padding: 1rem;
+  }
+
+  &__type {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.8px;
+    color: $nav-title-color;
+  }
+
+  &__date {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: $page-path-text;
+  }
+
+  &__title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.1px;
+    collor: $contact-text;
+    font-weight: 600;
+
+    &-tag {
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 1.25rem;
+      padding: 3px .5rem;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: .875rem;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  &__description {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    collor: $contact-text;
+    margin-bottom: .75rem;
+  }
+}

@@ -1,0 +1,68 @@
+html {
+   // height: 100%;
+   //overflow-x: hidden;
+
+   &::-webkit-scrollbar {
+      width: 0;
+      background-color: #000;
+      //background-color: $text-color;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: #f980fe;
+      border-radius: 100px;
+   }
+}
+
+html,
+body,
+a,
+p,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea {
+   scroll-behavior: smooth;
+   margin: 0;
+   padding: 0;
+   line-height: 1;
+   border-width: 0;
+   color: #181818;
+   font-weight: 400;
+   text-decoration: none;
+   font-family: "Segoe UI", sans-serif;
+}
+
+ul li {
+   list-style-type: none;
+}
+
+* {
+   box-sizing: border-box;
+   outline: none;
+   font-family: "Segoe UI", sans-serif;
+}
+
+body {
+   overflow-x: hidden;
+   line-height: 1;
+   min-height: 100vh;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: $page-bg;
+
+   &.no-scroll {
+      overflow: hidden;
+   }
+}
+
