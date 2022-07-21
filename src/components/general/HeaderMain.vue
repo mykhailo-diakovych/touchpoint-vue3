@@ -1,12 +1,8 @@
 <template>
   <q-header class="header">
-    <q-toolbar class="header__toolbar bg-white row no-wrap">
+    <q-toolbar class="header__toolbar bg-white row no-wrap justify-between">
       <div class="header__action row no-wrap items-center">
-        <q-btn-dropdown
-          no-caps
-          class="action-create"
-          label="Create"
-        >
+        <q-btn-dropdown no-caps class="action-create" label="Create">
           <q-list class="action-create-list">
             <q-item
               class="action-create-item row items-center q-pa-none"
@@ -34,10 +30,7 @@
         </div>
       </div>
       <div class="header__profile row no-wrap justify-between">
-        <q-btn-dropdown
-          no-caps
-          class="profile-status"
-        >
+        <q-btn-dropdown no-caps class="profile-status">
           <template v-slot:label>
             <div class="row no-wrap items-center">
               <span class="status-green" />
@@ -116,10 +109,7 @@
             <span class="icon-setting header-icon" />
           </q-btn>
         </div>
-        <q-btn-dropdown
-          no-caps
-          class="profile-setting"
-        >
+        <q-btn-dropdown no-caps class="profile-setting">
           <template v-slot:label>
             <div class="row no-wrap items-center">
               <p class="q-mb-none">TextMagic</p>

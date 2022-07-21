@@ -10,6 +10,17 @@
 .header {
   left: 200px;
   transition: all .5s;
+
+  .q-focus-helper {
+    background: transparent;
+
+    &::before,
+    &::after {
+      display: none;
+      background: transparent;
+    }
+  }
+
   &__toolbar {
     box-shadow: inset 0px -1px 0px #E6E9F1;
     padding: 8px 32px;
@@ -55,7 +66,6 @@
   }
 
   &__profile {
-    width: 35%;
     height: 100%;
 
     .header-icon {
@@ -132,16 +142,6 @@
     &:hover {
       transition: all .5s;
       background: #eee;
-
-      .q-focus-helper {
-        background: transparent;
-
-        &::before,
-        &::after {
-          display: none;
-          background: transparent;
-        }
-      }
     }
 
     &-wrapper {
