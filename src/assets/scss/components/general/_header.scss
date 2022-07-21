@@ -8,6 +8,8 @@
 }
 
 .header {
+  left: 200px;
+  transition: all .5s;
   &__toolbar {
     box-shadow: inset 0px -1px 0px #E6E9F1;
     padding: 8px 32px;
@@ -102,10 +104,6 @@
       font-weight: 600;
     }
   }
-}
-
-.q-header {
-  transition: all .5s;
 }
 
 //status

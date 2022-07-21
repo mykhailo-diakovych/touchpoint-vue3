@@ -1,7 +1,5 @@
 <template>
   <q-drawer
-    transition-show="jump-down"
-    transition-hide="jump-up"
     show-if-above
     :mini="miniState"
     :width="200"
