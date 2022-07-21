@@ -1,0 +1,16 @@
+@import "status";
+@import "settings";
+
+.header__profile {
+  height: 100%;
+
+  .header-icon {
+    font-size: 20px;
+  }
+
+  p {
+    color: #6E7191;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

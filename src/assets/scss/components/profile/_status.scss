@@ -1,0 +1,69 @@
+.header {
+  .profile {
+    &-status {
+      display: inline-flex;
+      background-color: #F7F7FC;
+      height: 100%;
+      padding: 0 14px;
+      border-radius: 4px;
+
+      &:before {
+        box-shadow: none;
+      }
+
+      .q-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.status {
+  &-green {
+    @include stats(#69BC35);
+  }
+
+  &-away {
+    @include stats(#EDB63F);
+  }
+
+  &-do-not-disturb {
+    @include stats(#ED6A61);
+  }
+
+  &-offline {
+    @include stats(#E6E9F1);
+  }
+
+  &-item {
+    width: 245px !important;
+    height: 36px !important;
+    min-height: auto !important;
+
+    &:hover {
+      transition: all .5s;
+      background: #eee;
+    }
+
+    &-wrapper {
+      width: 100%;
+      color: #4E4B66;
+      font-weight: 600;
+      height: 36px;
+    }
+
+    &.small {
+      height: 28px !important;
+      position: relative;
+
+      .toggle {
+        position: absolute;
+        right: .5rem;
+      }
+
+      .status-item-wrapper {
+        height: 28px !important;
+      }
+    }
+  }
+}
