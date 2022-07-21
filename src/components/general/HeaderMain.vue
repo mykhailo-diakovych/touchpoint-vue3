@@ -195,7 +195,6 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import { store } from "@/store";
 const searchQuery = ref("");
 const buttons = ref([
   { title: "Text message", icon: "text" },

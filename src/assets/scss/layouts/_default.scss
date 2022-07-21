@@ -1,7 +1,10 @@
 .default-wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
   .q-page-container {
     transition: all 0.5s ease 0s;
+    .contact-page {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 24px;
+    }
   }
 }

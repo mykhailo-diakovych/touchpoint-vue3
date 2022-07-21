@@ -1,17 +1,13 @@
 <template>
-  <div class="">
-    <q-layout view="lHh Lpr fFf" container style="height: 100vh">
-      <Header />
-
-      <SideBar />
-      <div class="overlay-screen" />
-      <q-page class="default-wrapper">
-        <q-page-container class="q-px-lg q-py-md">
-          <RouterView />
-        </q-page-container>
-      </q-page>
-    </q-layout>
-  </div>
+  <q-layout view="lHh Lpr fFf" container style="height: 100vh">
+    <Header />
+    <SideBar />
+    <q-page class="default-wrapper">
+      <q-page-container class="q-px-lg q-py-md">
+        <RouterView />
+      </q-page-container>
+    </q-page>
+  </q-layout>
 </template>
 
 <script setup lang="ts">

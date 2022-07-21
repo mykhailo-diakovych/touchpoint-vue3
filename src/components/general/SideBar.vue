@@ -98,7 +98,7 @@ const navList = ref<NavItem[]>([
   {
     id: "5",
     title: "Contacts",
-    link: "/contact?contact=Jennifer%20Crowford",
+    link: "/contact",
     icon: "contacts",
     notifications: 0,
   },

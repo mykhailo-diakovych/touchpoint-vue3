@@ -25,6 +25,5 @@ import { computed } from "vue";
 
 const route = useRoute();
 const name = computed(() => route.name);
-const query = computed(() => route.query.contact);
 const path = computed(() => route.path);
 </script>
